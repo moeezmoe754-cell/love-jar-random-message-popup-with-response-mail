@@ -776,5 +776,260 @@
         }
     </script>
 </body>
+<img src="">
+<img src="image.jpg">
+<img src="https://....jpg">
+<p>Your message here</p>
+<p>You are the best thing that happened to me ❤️</p>
+<div class="compliment">
+  Tum meri favorite insan ho 💖
+</div>
 
-</html>
+<div class="compliment">
+  Your smile fixes my mood ✨
+</div>
+Memory
+timeline
+card
+<div class="memory-card">
+  <h3>Our First Talk 💌</h3>
+  <p>Mujhe abhi bhi yaad hai jab hum pehli baar properly baat ki thi...</p>
+</div>
+<video controls>
+  <source src="YOUR_VIDEO_LINK.mp4">
+</video>
+<script>
+const notes = [
+"You make my world better ❤️",
+"I still smile remembering us 💖",
+"You are my safe place 🌸",
+"I love every little thing about you ✨"
+];
+
+function showNote() {
+  const random = notes[Math.floor(Math.random() * notes.length)];
+  alert(random);
+}
+</script>
+<>/* MOBILE RESPONSIVE FIX */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+width:100%;
+overflow-x:hidden;
+font-family:sans-serif;
+}
+
+/* Images Responsive */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* Videos Responsive */
+
+video{
+max-width:100%;
+height:auto;
+border-radius:15px;
+}
+
+/* Buttons Mobile Friendly */
+
+button{
+max-width:100%;
+-webkit-tap-highlight-color:transparent;
+}
+
+/* Container Fix */
+
+.container{
+width:100%;
+max-width:1200px;
+margin:auto;
+padding:15px;
+}
+
+/* Mobile Screen Settings */
+
+@media screen and (max-width:768px){
+
+body{
+padding:10px;
+}
+
+h1{
+font-size:28px;
+line-height:1.3;
+}
+
+h2{
+font-size:22px;
+}
+
+p{
+font-size:15px;
+line-height:1.6;
+}
+
+.container{
+padding:10px;
+}
+
+button{
+width:100%;
+font-size:16px;
+padding:12px;
+margin-top:10px;
+}
+
+.card{
+width:100%;
+}
+
+.memory-card{
+width:100%;
+}
+
+.jar{
+transform:scale(0.9);
+}
+
+}
+
+/* Extra Small Devices */
+
+@media screen and (max-width:480px){
+
+h1{
+font-size:24px;
+}
+
+p{
+font-size:14px;
+}
+
+button{
+font-size:15px;
+}
+
+.jar{
+transform:scale(0.8);
+}
+
+}
+.heart {
+  position: fixed;
+  top: -10px;
+  color: red;
+  animation: fall linear forwards;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 20 + "px";
+  heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+setInterval(createHeart, 300);
+</script>
+<button onclick="showLove()" 
+style="padding:15px 25px;
+background:pink;
+border:none;
+border-radius:20px;
+font-size:18px;">
+Open Love Jar 💌
+</button>
+
+<script>
+function showLove() {
+
+const msgs = [
+"You are my favorite person ❤️",
+"You make my life beautiful ✨",
+"I still smile remembering us 💖",
+"You are my happy place 🌸",
+"I love every little thing about you 💕"
+];
+
+const random = msgs[Math.floor(Math.random()*msgs.length)];
+
+alert(random);
+}
+</script>\
+<button onclick="showNote()">Open Love Note 💌</button>
+<script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.hearts.min.js"></script>
+<style>
+.card {
+  width: 250px;
+  height: 150px;
+  background: #ffb6c1;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+</style>
+
+<div class="card">
+Our First Memory 💖
+</div>
+<audio autoplay loop>
+  <source src="YOURMUSIC.mp3" type="audio/mp3">
+</audio>
+<script>
+window.onload = function() {
+alert("Welcome My Love ❤️");
+}
+</script>
+<script>
+function quiz() {
+
+let answer = prompt("Who loves you the most? 😏");
+
+if(answer.toLowerCase() == "me") {
+alert("Correct ❤️");
+}
+else {
+alert("Wrong answer 😂❤️");
+}
+}
+</script>
+
+<button onclick="quiz()">Play Love Quiz 🎮</button>
